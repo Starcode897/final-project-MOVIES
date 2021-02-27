@@ -2,6 +2,7 @@
 <html lang="en-us">
 
 <head>
+
     <meta charset="utf-8">
     <title>Machine Learning</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +14,7 @@
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="static/css/style.css">
+    
 </head>
 
 <body>
@@ -28,7 +30,32 @@
       </div>
     </div>
   </div>  
-  
+
+    <div class="container">
+        <div class="row margin-top-50">
+            <div class="col-md-2">
+            <aside class="filters">
+                <div class="panel panel-default">
+                <div class="panel-heading">Enter</div>
+                <div class="panel-body">
+                    <form id = "form">
+                    <div class="form-group">
+                        <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                            <label for="date">Enter a Date</label>
+                            <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        </li>
+                        </ul>
+                    </div>
+                    <button id="filter-btn" type="button" class="btn btn-default">Calculate Charges</button>
+                    </form>
+                </div>
+            </div>
+            </aside>
+        </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
