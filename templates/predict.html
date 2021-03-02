@@ -10,33 +10,119 @@
         <form method="POST", action="{{url_for('home')}}">
             <div class="form-group">
                 <ul class="list-group" id="filters">
+                
                 <li class="filter list-group-item">
                     <label for="gender">Gender:</label>
-                        <select name="gen" id="gender">
+                        <select name="gender" id="gender">
                             <option value="1">Male</option>
                             <option value="0">Female</option>
                         </select>
                 </li>
                 <li class="filter list-group-item">
                     <label for="retired">Are you Retired?</label>
-                        <select name="retire" id="retired">
+                        <select name="retired" id="retired">
                             <option value="1">Yes</option>
                             <option value="0">No</option>
                         </select>
                 </li>
                 <li class="filter list-group-item">
                     <label for="partner">Are you Single?</label>
-                        <select name="pard" id="partner">
+                        <select name="partner" id="partner">
                             <option value="1">Yes</option>
                             <option value="0">No</option>
                         </select>
                 </li>
                 <li class="filter list-group-item">
                     <label for="dependents">Do you have any Dependents?</label>
-                        <select name="depend" id="Dependents?">
+                        <select name="dependents" id="Dependents?">
                             <option value="1">Yes</option>
                             <option value="0">No</option>
                         </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="tenure">How many months have you been with your telecom company?</label>
+                        <input class="form-control" id="tenure" type="text", name="tenure", placeholder="48">
+                </li>
+                <li class="filter list-group-item">
+                    <label for="telephone">Do you want Telephone Service?</label>
+                        <select name="telephone" id="telephone">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="lines">Do you have Multiple Lines?</label>
+                        <select name="lines" id="lines">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="internet">What Internet Service would you like?</label>
+                        <select name="internet" id="internet">
+                            <option value="1">DSL</option>
+                            <option value="0">Fiber-Optics</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="security">Do you want Online Security?</label>
+                        <select name="security" id="security">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="backup">Do you want Online Backup?</label>
+                        <select name="backup" id="backup">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>    
+                </li>
+                <li class="filter list-group-item">
+                    <label for="protection">Do you want Internet Device Insurance?</label>
+                        <select name="protection" id="protection">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>    
+                </li>
+                <li class="filter list-group-item">
+                    <label for="techsupport">Do you want Technical Support?</label>
+                        <select name="techsupport" id="techsupport">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="streamtv">Do you want TV Streaming?</label>
+                        <select name="streamtv" id="streamtv">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select> 
+                </li>
+                <li class="filter list-group-item">   
+                    <label for="streammovie">Do you want Movie Streaming?</label>
+                        <select name="streammovie" id="streammovie">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">  
+                    <label for="contract">What type of contract would you like?</label>
+                        <select name="contract" id="contract">
+                            <option value="1">Month-To-Month</option>
+                            <option value="0">One Year</option>
+                        </select>          
+                </li>
+                <li class="filter list-group-item">
+                    <label for="billing">Would you like Paperless Billing?</label>
+                        <select name="billing" id="billing">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>        
+                </li>
+                <li class="filter list-group-item">      
+                    <label for="currentpayment">Insert your current yearly payment</label>
+                        <input class="form-control" id="currentpayment" type="text" placeholder="69.00">  
                 </li>
                 </ul>
             </div>
