@@ -31,7 +31,6 @@
     </div>
   </div>  
 
-  <!--Create the Survey-->
     <div class="container">
         <div class="row margin-top-50">
             <div class="col-md-2">
@@ -48,137 +47,101 @@
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="retired">Are you Retired?</label>
+                            <label for="retired">Are you Retired?:</label>
                                 <select name="retired" id="retired">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="partner">Are you Single?</label>
+                            <label for="partner">Are you Single?:</label>
                                 <select name="partner" id="partner">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="dependents">Do you have any Dependents?</label>
+                            <label for="dependents">Do you have any Dependents?:</label>
                                 <select name="dependents" id="Dependents?">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="tenure">How many months have you been with your telecom company?</label>
+                            <label for="tenure">How many months have you been with your telecom company?:</label>
                                 <input class="form-control" id="tenure" type="text" placeholder="48">
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="telephone">Do you want Telephone Service?</label>
+                            <label for="telephone">Do you want telephone service:</label>
                                 <select name="telephone" id="telephone">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>  
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="lines">Do you have Multiple Lines?</label>
+                            <!-- <label for="lines">Do you have multiple lines?</label>
                                 <select name="lines" id="lines">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="no_phone">No Phone Service</option>
-                                </select>  
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="internet">What Internet Service would you like?</label>
+                                </select>   -->
+                            <label for="internet">Do you want Fiber Optic service?</label>
                                 <select name="internet" id="internet">
-                                    <option value="dsl">DSL</option>
-                                    <option value="fiber">Fiber-Optics</option>
-                                    <option value="no">No Internet Service</option>
-                                </select>
-                        </li>
-                        <li class="filter list-group-item">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                            </select>
+                            <!-- <label for="internet">Do you want internet service?</label>
+                                <select name="internet" id="internet">
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select> -->
                             <label for="security">Do you want Online Security?</label>
                                 <select name="security" id="security">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
-                                    <option value="no_internet">No Internet Service</option>
-                                </select>  
-                        </li>
-                        <li class="filter list-group-item">
+                                </select>   
                             <label for="backup">Do you want Online Backup?</label>
                                 <select name="backup" id="backup">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
-                                    <option value="no_internet">No Internet Service</option>
                                 </select>    
-                        </li>
-                        <li class="filter list-group-item">
                             <label for="protection">Do you want Internet Device Insurance?</label>
                                 <select name="protection" id="protection">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
-                                    <option value="no_internet">No Internet Service</option>
                                 </select>    
-                        </li>
-                        <li class="filter list-group-item">
                             <label for="techsupport">Do you want Technical Support?</label>
                                 <select name="techsupport" id="techsupport">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="no_internet">No Internet Service</option>
                                 </select>  
-                        </li>
-                        <li class="filter list-group-item">
                             <label for="streamtv">Do you want TV Streaming?</label>
                                 <select name="streamtv" id="streamtv">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="no_internet">No Internet Service</option>
-                                </select> 
-                        </li>
-                        <li class="filter list-group-item">   
+                                </select>    
                             <label for="streammovie">Do you want Movie Streaming?</label>
                                 <select name="streammovie" id="streammovie">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                     <option value="no_internet">No Internet Service</option>
-                                </select>  
-                        </li>
-                        <li class="filter list-group-item">  
-                            <label for="contract">What type of contract would you like?</label>
+                                </select>    
+                            <!-- <label for="contract">What type of contract would you like?</label>
                                 <select name="contract" id="contract">
                                     <option value="month">Month-To-Month</option>
                                     <option value="yearly">One Year</option>
                                     <option value="biyearly">Two Year</option>
-                                </select>          
-                        </li>
-                        <li class="filter list-group-item">
+                                </select>            -->
                             <label for="billing">Would you like Paperless Billing?</label>
                                 <select name="billing" id="billing">
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>
                                 </select>        
-                        </li>
-                        <li class="filter list-group-item">
-                            <label for="method">Insert preffered Payment Method:</label>
+                            <!-- <label for="method">Insert preffered Payment Method:</label>
                                 <select name="method" id="method">
                                     <option value="elecheck">Electronic Check</option>
                                     <option value="mailchek">Mailed Check</option>
                                     <option value="banktransfer">Bank Transfer(Automatic)</option>
                                     <option value="creditcard">Credit Card(Automatic)</option>
-                                </select>
-                        </li>
-                        <li class="filter list-group-item">      
-                            <label for="currentpayment">Insert your current monthly payment</label>
+                                </select>       -->
+                            <!-- <label for="currentpayment">Insert your current monthly payment</label>
                                 <input class="form-control" id="currentpayment" type="text" placeholder="69.00">  
-                        </li>
+                        </li> -->
                         </ul>
                     </div>
                     <button id="filter-btn" type="button" class="btn btn-default">Calculate Charges</button>
-                    <!--Output Field-->
-                    <h1>Test Output</h1>
-                    <output id="output"></output>
                     </form>
                 </div>
             </div>
@@ -187,10 +150,6 @@
         </div>
     </div>
 
-
-<!--Access our JavaScript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-<script src="static/js/app.js"></script>
 </body>
 
 </html>
