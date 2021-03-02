@@ -1,0 +1,49 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> IRIS FLOWER DETECTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+            <div class="form-group">
+                <ul class="list-group" id="filters">
+                <li class="filter list-group-item">
+                    <label for="gender">Gender:</label>
+                        <select name="a" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="retired">Are you Retired?</label>
+                        <select name="b" id="retired">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="partner">Are you Single?</label>
+                        <select name="c" id="partner">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="dependents">Do you have any Dependents?</label>
+                        <select name="d" id="Dependents?">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                </li>
+                </ul>
+            </div>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='static\flower1.jpg' alt="flower">
+        
+    </center>
+
+    </body>
+</html>
