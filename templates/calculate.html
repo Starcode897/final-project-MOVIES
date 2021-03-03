@@ -22,6 +22,27 @@
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
     .fa-anchor,.fa-coffee {font-size:200px}
+    #tenure.form-control {
+    width: 80px;
+    display: inline-block;
+    }
+    .w3-padding-64{padding-left: 300px;
+        padding-right: 300px;
+        background-color: rgb(12, 9, 65);}
+    body > div.w3-row-padding.w3-padding-64.w3-container.w3-center > div > form > input {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    body > div.w3-row-padding.w3-padding-64.w3-container.w3-center > div > form > input:hover{
+        background-color: darkgreen
+    }
+
+    
 </style>
    
 </head>
@@ -44,12 +65,15 @@
     <h1 class="w3-margin w3-jumbo">Enter your information.</h1>
   </header>
 
-    <center>
+
     <!-- The post method passes option values to the server. In this case, the option values are 1 and 0 -->
+
+    <div class="w3-row-padding w3-padding-64 w3-container w3-center">
+        <div class="w3-content">
+        
         <form method="POST", action="{{url_for('calc')}}">
             <div class="form-group">
                 <ul class="list-group" id="filters">
-                
                 <li class="filter list-group-item">
                     <label for="gender">Gender:</label>
                         <select name="gender" id="gender">
@@ -80,7 +104,7 @@
                 </li>
                 <li class="filter list-group-item">
                     <label for="tenure">How many months have you been with your telecom company?</label>
-                        <input class="form-control" id="tenure" type="text", name="tenure", placeholder="44">
+                        <input class="form-control" id="tenure" type="text", name="tenure", placeholder="Months">
                 </li>
                 <li class="filter list-group-item">
                     <label for="telephone">Do you want Telephone Service?</label>
@@ -153,13 +177,14 @@
                         </select>        
                 </li>
             </div>
-            <input type="submit", value='Predict Price'>
+            <input class="predict-button" type="submit", value='Predict Price'>
             
-            <!-- When the form is submitted, the info can be grabbed by flask and passed through the model -->
-            <!-- BUT FOR WHATEVER GODFORSAKEN REASON, THE PICKLE FILE DOESN'T EXIST.... -->
-        </form>
-    </center>   
 
+        </form>
+    
+    </div>
+    </div>  
+</div>
 </body>
 
 </html>
