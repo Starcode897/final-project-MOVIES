@@ -1,9 +1,21 @@
 <html>
-    <body bgcolor=#d4a3ae>
+    <body>
 
         <center>
+        
+        <!-- Create the Navigation Menu -->
+        <div class = "navbar">
+            <div class = "row justify-content-center">
+            <div class = "visualizations">
+                <a href = "index.html">Home</a>
+                <a class = "current" href = "input.html">Payment Calculator</a>
+                <a href = "learning.html">Machine Learning</a>
+                <a href = "about.html">About Us</a>
+            </div>
+            </div>
+        </div> 
 
-        <h1> IRIS FLOWER DETECTION </h1><br>
+        <h1> Telecom Payment Calculator </h1><br>
         
         <!-- The post method passes option values to the server. In this case, the option values are 1 and 0 -->
 
@@ -113,19 +125,12 @@
                             <option value="0">No</option>
                         </select>        
                 </li>
-<!--            <li class="filter list-group-item">      
-                    <label for="currentpayment">Insert your current yearly payment</label>
-                        <input class="form-control" id="currentpayment" type="text" placeholder="3973.20">  
-                </li>
-                </ul> -->
             </div>
             <input type="submit", value='Predict Price'>
             
             <!-- When the form is submitted, the info can be grabbed by flask and passed through the model -->
             <!-- BUT FOR WHATEVER GODFORSAKEN REASON, THE PICKLE FILE DOESN'T EXIST.... -->
         </form>
-
-        <img src='static\flower1.jpg' alt="flower">
         
     </center>
 
