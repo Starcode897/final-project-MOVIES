@@ -22,8 +22,8 @@
       .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
       .fa-anchor,.fa-coffee {font-size:200px}
     
-    body {background-color: white;
-    background-image: url("static/img/telecom.jpg");
+    body {background-color:darkblue;
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -37,31 +37,32 @@
             border-bottom:5px solid #ffffff;
         }
     .container-fluid {
-
-   padding: 30pt;
-   padding-top:80pt;
-   padding-left:40pt;
-   padding-right: 40pt;
-   color: lightgray
+   background-color: darkblue;
+   color: rgb(187, 187, 187)
     }    
 
     .col-lg-12{
     padding-top: 20pt;
     padding-bottom: 20pt;
     padding-left: 40pt;
-    padding-right: 30pt;
+    padding-right: 40pt;
     background: rgba(11, 14, 48, 0.733)
     /* background-color: white; */
 
 }
 h2{text-align: center;
 font-family: "Helvetica";}
-p{text-align: center;}
-h3{text-align: center;}
+p{text-align: center;
+font-size: 12pt;}
+h3{text-align: center;
+font-size:15pt}
 .img-center{display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;}
+  width: 40%;}
+#title{background-image: url("static/img/telecom.jpg");}
+#title > header > h1 {color:white}
+
 
   </style>
 </head>
@@ -80,6 +81,12 @@ h3{text-align: center;}
       </div>
     </div>
   </div>  
+
+  <div class="container-fluid" id="title">
+    <header class="w3-container w3-center" style="padding:128px 16px">
+      <h1 class="w3-margin w3-jumbo">Machine Learning</h1>
+    </header>
+</div>
   <!-- <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">Telecom Billing</h1>
     <p class="w3-xlarge">Machine Learning Project</p>
@@ -92,15 +99,13 @@ h3{text-align: center;}
           <div class="col-lg-12">
               <div id="color_barchart">
                 <div class="article">
-                  <h2>Machine Learning</h2>
-                  <hr>
-                  <br>
+
                   <p>We designed a multivariable linear regression model in order to estimate monthly cost. 
                     Below is a residual plot that demonstrates provides insight on the model's accuracy. This model's
                     R2 value was .98.
 
                   </p>
-                  <br>
+
                   <img src="static/img/residuals.png" alt="Residual Plot" class="img-center">
  
       
@@ -108,7 +113,6 @@ h3{text-align: center;}
               </div>
           
               <h3>The Process:</h3>
-              <br>
               <p>To prepare the data for the model, we studied the correlation coefficients among the variables.
                 We eliminated variables that would cause multicollinearity, and chose variables that would likely have
                 an effect on monthly price (we used the correlation coefficients as a guide). To address categorical 
