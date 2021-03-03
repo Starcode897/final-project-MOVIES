@@ -14,19 +14,19 @@ def home():
     return render_template('index.html')
 
 #Homepage route when navigating from another page
-@app.route('/home')
+@app.route('/index.html')
 def homepage():
     #Go to webpage
     return render_template('index.html')
 
 #Route for learning page
-@app.route("/learning")
+@app.route("/learning.html")
 def learning():
     #Go to webpage
     return render_template('learning.html')
 
 #Route for about page
-@app.route("/about")
+@app.route("/about.html")
 def about():
     #Go to webpage
     return render_template('about.html')
@@ -41,12 +41,12 @@ def about():
 ############################################## Tutorial ########################################
 
 #Input templates
-@app.route('/input')
+@app.route('/input.html')
 def form():
     return render_template('input.html')
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict.html', methods=['POST'])
 #!!! THIS 'calc' used to be 'home' in tutorial!!!!!!
 def calc():
     data1 = request.form['gender']
