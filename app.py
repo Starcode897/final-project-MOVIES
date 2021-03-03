@@ -63,7 +63,8 @@ def calc():
     #data15 = request.form['currentpayment']
     arr = np.array([[data1, data2, data3, data4, data5, data6, data7,
     data8, data9, data10, data11, data12, data13, data14, data15]])
-    pred = model.predict(arr)
+    #pred = model.predict(arr)
+    pred = "${:,.2f}".format(float(model.predict(arr)))
     # return pred
     return render_template('outcome.html', data=pred)
 
