@@ -22,15 +22,29 @@
   .w3-third img:hover{opacity: 1}
 </style>
 
+  <!-- Create the Navigation Menu -->
+  <div class="w3-top">
+    <div class="w3-bar w3-dark-grey w3-card w3-left-align w3-large" id="Navbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <div class = "row justify-content-center">
+      <div class = "visualizations">
+        <a class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href = "index.html"> </class> Home</a>
+        <a href = "input.html" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Payment Calculator</a>
+        <a href = "learning.html" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Machine Learning</a>
+        <a href = "about.html" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+      </div>
+    </div>
+  </div>  
+
 <!--Sidebar-->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+<!--<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
   <h3 class="w3-padding-64 w3-center"><b>Bill<br>Predictors</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href = "index.html" onclick="w3_close()" class = "current" >Home</a>
   <a href="input.html" onclick="w3_close()" class="w3-bar-item w3-button">Payment Calculator</a> 
   <a href="learning.html" onclick="w3_close()" class="w3-bar-item w3-button">Machine Learning</a> 
-  <!--<a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>-->
-</nav>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>-->
 
   <!-- About section -->
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
@@ -40,14 +54,6 @@
     <img src="images/Ryan-pic.jpg" style="width:25%" onclick="onClick(this)" alt="Ryan Gonzalez">
     <img src="images/Ben-pic.jpg" style="width:25%" onclick="onClick(this)" alt="Ben Kramskoi">
     <img src="images/Jordan-pic.jpg" style="width:20%" onclick="onClick(this)" alt="Jordan Chatman">
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>My Name</h4>
-      <p>
-        Add something about you.
-      </p>
-      <p>mail: example@example.com</p>
-      <p>tel: 5353 35531</p>
-      <hr class="w3-opacity">
     </div>
   </div>
   <!-- Photo grid -->
@@ -61,19 +67,13 @@
 </head>
 
 <body>
-
-  <!-- Create the Navigation Menu -->
-  <!--<div class = "navbar">
-    <div class = "row justify-content-center">
-      <div class = "visualizations">
-        <a class = "current" href = "index.html">Home</a>
-        <a href = "predict.html">Payment Calculator</a>
-        <a href = "learning.html">Machine Learning</a>
-        <a href = "about.html">About Us</a>
-      </div>
-    </div>
-  </div>  
-  
-</body>-->
+  <h4>My Name</h4>
+  <p>
+    Add something about you.
+  </p>
+  <p>mail: example@example.com</p>
+  <p>tel: 5353 35531</p>
+  <hr class="w3-opacity">
+</body>
 
 </html>
