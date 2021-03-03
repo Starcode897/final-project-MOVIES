@@ -18,7 +18,7 @@
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="static/css/style.css">
     <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+      body,h1,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
       .fa-anchor,.fa-coffee {font-size:200px}
     
@@ -37,12 +37,7 @@
             border-bottom:5px solid #ffffff;
         }
     .container-fluid {
-    /* box-shadow: 0 5px 25px 0 rgba(255, 255, 255, 0.589);
-    color:#BEBEBE;
-    text-shadow: 3px 3px 10px #000000;
-    background: rgba(0, 0, 0, 0.315); */
-    /* background: white;
-   padding: 5pt */
+
    padding: 30pt;
    padding-top:80pt;
    padding-left:40pt;
@@ -59,9 +54,15 @@
     /* background-color: white; */
 
 }
-h2{text-align: center;}
+h2{text-align: center;
+font-family: "Helvetica";}
 p{text-align: center;}
 h3{text-align: center;}
+.img-center{display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
   </style>
 </head>
 
@@ -92,26 +93,28 @@ h3{text-align: center;}
               <div id="color_barchart">
                 <div class="article">
                   <h2>Machine Learning</h2>
+                  <hr>
                   <br>
-                  <p>We took the average of the approach (=true) counts for the three squirrel fur colors (=gray, cinnamon, or black). 
-                    Approach values were true/false. They were assigned on the basis of whether or not a squirrel approached
-                    a human for food.
+                  <p>We designed a multivariable linear regression model in order to estimate monthly cost. 
+                    Below is a residual plot that demonstrates provides insight on the model's accuracy. This model's
+                    R2 value was .98.
+
                   </p>
                   <br>
+                  <img src="static/img/residuals.png" alt="Residual Plot" class="img-center">
  
       
                 </div>
               </div>
+          
+              <h3>The Process:</h3>
               <br>
-              <br>
-              <h3>Analysis:</h3>
-              <br>
-              <p>In order to quantify the approaches, we applied a conditional statement and summed up the true and false counts.
-                After finding that only 127 squirrels approached humans for food, we decided to identify the squirrel color that approached most frequently.
-                Gray squirrels approached humans the most. The gray squirrel approach count was at 89, cinnamon at 33, and black at 5. To adjust for the population,
-                we calculated the approaches as a percentage based on total reports: Gray: 4.9%, Cinnamon: 12.1%, Black: 7.3%. Although gray squirrels were reported the most for
-                their approaches, they were the least likely out of the three fur colors to approach humans for food. As a whole, across the three fur colors, only 5% of squirrels 
-                approached humans.
+              <p>To prepare the data for the model, we studied the correlation coefficients among the variables.
+                We eliminated variables that would cause multicollinearity, and chose variables that would likely have
+                an effect on monthly price (we used the correlation coefficients as a guide). To address categorical 
+                variables, we applied one-hot encoding. The data was then split into training and testing data for the
+                machine learning process. As each model provided a different R2 and MSE value, we compared the 
+                values in order to choose our best model.
               </p>
 
               
