@@ -16,5 +16,9 @@
 ##### Question to answer:
 What should user be paying for their telecom services?
 
+## Residual
+
+![residual_plot](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/residuals.png)
+
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
