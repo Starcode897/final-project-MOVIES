@@ -29,5 +29,9 @@ Then, we input that array to the model using the predict method.
 Next, we converted the resulting index into a float in USD Money Format.
 Finally,  we returned this output to the ‘outcome.html’ to display the result on our website.
 
+## Calculator
+
+![Calculator](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/calculatehtml.png)
+
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
