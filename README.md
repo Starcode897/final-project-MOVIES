@@ -26,7 +26,7 @@ What should user be paying for their telecom services?
 ##### Methods:
 First, we got the values from the survey and inserted that data into an array.
 Then, we input that array to the model using the predict method.
-Next, we converted the resulting index into a float in USD Money Format
+Next, we converted the resulting index into a float in USD Money Format.
 Finally,  we returned this output to the ‘outcome.html’ to display the result on our website.
 
 Heroku APP:
