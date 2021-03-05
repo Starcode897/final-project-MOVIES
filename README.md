@@ -7,6 +7,8 @@
 * [Jordan Chatman](https://github.com/JordanChat)
 * [Tyler Brown](https://github.com/Starcode897)
 
+### [Project Presentation!](https://docs.google.com/presentation/d/1aZsKhIUplQxirxhCHY3ZwdMNveFSOaMW4jF4jsQmDYk/edit?ts=603ed6cb#slide=id.p)
+
 
 
 Heroku APP:
