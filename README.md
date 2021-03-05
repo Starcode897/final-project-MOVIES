@@ -22,5 +22,12 @@ What should user be paying for their telecom services?
 
 ## Telecom
 ![telecom_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/telecom.jpg)
+
+##### Methods:
+First, we got the values from the survey and inserted that data into an array.
+Then, we input that array to the model using the predict method.
+Next, we converted the resulting index into a float in USD Money Format
+Finally,  we returned this output to the ‘outcome.html’ to display the result on our website.
+
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
