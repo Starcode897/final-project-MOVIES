@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Machine Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="static/css/style.css">
+<style>
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+    #tenure.form-control {
+    width: 80px;
+    display: inline-block;
+    }
+    .w3-padding-64{padding-left: 300px;
+        padding-right: 300px;
+        background-color: rgb(12, 9, 65);}
+    body > div.w3-row-padding.w3-padding-64.w3-container.w3-center > div > form > input {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    body > div.w3-row-padding.w3-padding-64.w3-container.w3-center > div > form > input:hover{
+        background-color: darkgreen
+    }
+
+    
+</style>
+   
+</head>
+
+<body>
+
+  <!-- Create the Navigation Menu -->
+  <div class="w3-top">
+    <div class="w3-bar w3-blue w3-card w3-left-align w3-large" id="Navbar">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class = "visualizations">
+        <a href = "/" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+        <a href = "/calculate" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Payment Calculator</a>
+        <a href = "/learning" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Machine Learning</a>
+        <a href = "/about" class = "w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+      </div>
+    </div>
+  </div>  
+  <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Enter your information.</h1>
+  </header>
+
+
+    <!-- The post method passes option values to the server. In this case, the option values are 1 and 0 -->
+
+    <div class="w3-row-padding w3-padding-64 w3-container w3-center">
+        <div class="w3-content">
+        
+        <form method="POST", action="{{url_for('calc')}}">
+            <div class="form-group">
+                <ul class="list-group" id="filters">
+                <li class="filter list-group-item">
+                    <label for="gender">Gender:</label>
+                        <select name="gender" id="gender">
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="retired">Are you a senior citizen?</label>
+                        <select name="retired" id="retired">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="partner">Are you Single?</label>
+                        <select name="partner" id="partner">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="dependents">Do you have any Dependents?</label>
+                        <select name="dependents" id="Dependents?">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="tenure">How many months have you been with your telecom company?</label>
+                        <input class="form-control" id="tenure" type="text", name="tenure", placeholder="Months">
+                </li>
+                <li class="filter list-group-item">
+                    <label for="telephone">Do you want Telephone Service?</label>
+                        <select name="telephone" id="telephone">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="DSL">Would you like DSL?</label>
+                        <select name="DSL" id="DSL">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="Fiber">Would you like Fiber-Optics?</label>
+                        <select name="Fiber" id="Fiber">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                </li>
+                <li class="filter list-group-item">
+                    <label for="security">Do you want Online Security?</label>
+                        <select name="security" id="security">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="backup">Do you want Online Backup?</label>
+                        <select name="backup" id="backup">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>    
+                </li>
+                <li class="filter list-group-item">
+                    <label for="protection">Do you want Internet Device Insurance?</label>
+                        <select name="protection" id="protection">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>    
+                </li>
+                <li class="filter list-group-item">
+                    <label for="techsupport">Do you want Technical Support?</label>
+                        <select name="techsupport" id="techsupport">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="streamtv">Do you want TV Streaming?</label>
+                        <select name="streamtv" id="streamtv">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select> 
+                </li>
+                <li class="filter list-group-item">   
+                    <label for="streammovie">Do you want Movie Streaming?</label>
+                        <select name="streammovie" id="streammovie">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>  
+                </li>
+                <li class="filter list-group-item">
+                    <label for="billing">Would you like Paperless Billing?</label>
+                        <select name="billing" id="billing">
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>        
+                </li>
+            </div>
+            <input class="predict-button" type="submit", value='Predict Price'>
+            
+
+        </form>
+    
+    </div>
+    </div>  
+</div>
+</body>
+
+</html>
