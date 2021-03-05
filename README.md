@@ -32,8 +32,11 @@ Finally,  we returned this output to the ‘outcome.html’ to display the resul
 ## Calculator
 ![calculator_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/calculatehtml.png)
 
-##Index
+## Index
 ![index_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/indexhtml.png)
+
+## Machine Learning
+![machine_learning_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/machinelearninghtml.png)
 
 
 Heroku APP:
