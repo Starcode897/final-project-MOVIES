@@ -9,6 +9,9 @@
 
 ### [Project Presentation!](https://docs.google.com/presentation/d/1aZsKhIUplQxirxhCHY3ZwdMNveFSOaMW4jF4jsQmDYk/edit?ts=603ed6cb#slide=id.p)
 
+#Data Sources:
+### [Kaggle Data Set](https://www.kaggle.com/radmirzosimov/telecom-users-dataset)
+
 
 
 Heroku APP:
