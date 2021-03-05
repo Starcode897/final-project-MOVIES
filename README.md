@@ -38,6 +38,9 @@ Finally,  we returned this output to the ‘outcome.html’ to display the resul
 ## Machine Learning
 ![machine_learning_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/machinelearninghtml.png)
 
+## Outcome
+![outcome_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/outcomehtml.png)
+
 
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
