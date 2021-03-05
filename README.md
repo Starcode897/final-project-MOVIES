@@ -32,6 +32,9 @@ Finally,  we returned this output to the ‘outcome.html’ to display the resul
 ## Calculator
 ![calculator_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/calculatehtml.png)
 
+##Index
+![index_pic](https://github.com/Starcode897/final-project-TELECOM/blob/main/static/img/indexhtml.png)
+
 
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
