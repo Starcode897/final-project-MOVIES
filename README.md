@@ -13,6 +13,8 @@
 ### [Kaggle Data Set](https://www.kaggle.com/radmirzosimov/telecom-users-dataset)
 
 
+##### Questions to answer:
+What should user be paying for their telecom services?
 
 Heroku APP:
 https://calm-headland-26707.herokuapp.com/
