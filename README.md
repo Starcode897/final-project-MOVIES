@@ -9,9 +9,13 @@
 
 #### Procedure:
 Dependencies were imported. Path to CSV was formed. The data with no internet service was dropped. A label encoder was used for the data. The dataframe was converted to a csv. A correlation matrix was run on the data.
+
 The data with no internet was dropped, leaving only two internet options. Multiple lines data was dropped because of multicollinearity with the phone service data. Contracts or payment methods were not included because of multiple options. The first model was run, where there was an R squared of 0.98, and a mean squared error of 5.
+
 For our second model, we dropped the internet service DSL variable due to multicollinearity. For our third model, we dropped the paperless billing variable to see how this would impact our model. For our fourth model, we started dropping random variables to see if the R squared would go down, and to see how the mean squared error would change. For our fifth model, we ended up dropping characteristics.
+
 Our final model had fifteen variables. Monthly charges was on the y axis. 20 percent of the data was put in the test set. 80 percent of the data was put in the training set. A linear regression model was formed. The model was fit to the training data. The scores for the training data and the testing data were calculated.
+
 The training score and testing score were both 0.99. The mean squared error was 5.59. The R squared was 0.98. The intercept and coefficient was printed. The coefficients made sense, which was checked by the coefficient for the phone service being 22, which means that for each “Yes”, the monthly price would increase by 22 dollars, which makes sense. 
 A predictions model was formed. The residuals were plotted for the training data and the testing data. The VIF scores were looked at for multicollinearity. A standard scaler was used. The model was saved as a pickle file. 
 
