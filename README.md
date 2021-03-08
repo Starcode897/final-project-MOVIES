@@ -1,4 +1,4 @@
-# final-project-MOVIES
+# final-project-TELECOM
 
 #Team Members:
 * [Ben Kramskoi](https://github.com/kramskb1)
